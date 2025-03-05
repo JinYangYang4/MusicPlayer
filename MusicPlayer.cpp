@@ -35,7 +35,7 @@ MusicPlayer::~MusicPlayer()
 void MusicPlayer::on_pushButton_clicked()
 {
     // 发起网络请求获取歌曲列表
-    QUrl url("http://159.138.35.84:3000/recommend/songs");
+    QUrl url("http://159.138.35.84:3000/recommend/song");
     QNetworkRequest request(url);
     manager->get(request);
 }
